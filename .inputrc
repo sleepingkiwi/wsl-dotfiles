@@ -1,0 +1,21 @@
+#http://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html
+
+# use alt+left/right arrow keys to jump over words
+"\e[5C": forward-word
+"\e[5D": backward-word
+
+# When pressing up or down arrows,
+# show only history entries that match what was already typed
+"\e[A":history-search-backward
+"\e[B":history-search-forward
+
+# ignore case when autocomplete file/directory name using tab
+set completion-ignore-case on
+
+# use tab to cycle through autocomplete options and shift tab to cycle back
+# http://brettterpstra.com//2011/09/25/quick-tip-some-inputrc-fun/
+TAB: menu-complete
+"\e[Z": "\e-1\C-i"
+
+# use ctrl+H to list all possible completions
+C-H: possible-completions

@@ -1,0 +1,9 @@
+# mostly just adding syntax highlighting support to nano!
+
+include /usr/share/nano/sh.nanorc
+include /usr/share/nano/html.nanorc
+include /usr/share/nano/php.nanorc
+include /usr/share/nano/javascript.nanorc
+include /usr/share/nano/nanorc.nanorc
+include /usr/share/nano/json.nanorc
+include /usr/share/nano/css.nanorc
