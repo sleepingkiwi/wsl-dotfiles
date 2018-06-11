@@ -4,15 +4,17 @@
 # source: https://github.com/sleepingkiwi/wsl-dotfiles
 
 
-# awww that's sweet
+# run on launch
 # --------------------------------------------------------------------------------------------------
 
+# awww that's sweet
 echo "Hi $USER, welcome back. I've really missed you buddy."
 
 
 # aliases
 # --------------------------------------------------------------------------------------------------
 
+alias dev-sync='bash ~/_wsl-dev-sync.sh'
 
 
 # some general configuration and settings
