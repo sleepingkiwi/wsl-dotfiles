@@ -31,9 +31,6 @@ PS1='\[\033[38;5;166m\]• \[\033[0m\]'
 # run on launch
 # --------------------------------------------------------------------------------------------------
 
-# awww that's sweet
-echo "Hi $USER, welcome back. I've really missed you buddy."
-
 # sync _dev whenever we launch...
 bash ~/.dotfiles/_wsl-dev-sync.sh
 
@@ -44,6 +41,9 @@ eval `ssh-agent -s`
 # add our default id_rsa key to our ssh session
 # we will be asked for a password but only for the first time!
 ssh-add
+
+# awww that's sweet
+echo "Hi $USER, welcome back. I've really missed you buddy."
 
 
 
