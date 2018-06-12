@@ -24,7 +24,7 @@ PROMPT_COMMAND=_
 # setting the PS1 marker before input
 # colour formatting needs to be escaped weirdly in PS1...
 # see: http://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-ps1-prompt
-PS1='\[\033[38;5;166m\]• \[\033[0m\]'
+PS1='\[\e[38;5;166m\]• \[\e[0m\]'
 
 
 
@@ -43,7 +43,7 @@ eval `ssh-agent -s`
 ssh-add
 
 # awww that's sweet
-echo "Hi $USER, welcome back. I've really missed you buddy."
+echo -e "#n\e[109mHi $USER, welcome back. I've really missed you buddy.\e[0m"
 
 
 
