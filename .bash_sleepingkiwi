@@ -43,7 +43,7 @@ eval `ssh-agent -s`
 ssh-add
 
 # awww that's sweet
-echo -e "#n\e[109mHi $USER, welcome back. I've really missed you buddy.\e[0m"
+echo -e "\n\e[38;5;195mHi $USER, welcome back. I've really missed you buddy.\e[0m"
 
 
 
