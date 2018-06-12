@@ -12,6 +12,6 @@ all custom stuff is kept in .bash_sleepingkiwi and just imported into .bashrc be
 
 ## `.inputrc`
 
-customisations to default keyboard shortcuts, autocomplete etc.
+customisations to _READLINE_, autocomplete settings mainly.
 
 👻

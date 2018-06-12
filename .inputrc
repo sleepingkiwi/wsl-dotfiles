@@ -1,4 +1,23 @@
-#http://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html
+# configuring the readline...
+# http://www.gnu.org/software/bash/manual/html_node/Bindable-Readline-Commands.html
+# https://www.gnu.org/software/bash/manual/html_node/Readline-Init-File-Syntax.html
+
+# ignore case when autocomplete file/directory name using tab
+set completion-ignore-case On
+# treat - and _ as the same for autocompletes
+set completion-map-case On
+# character denoting a file’s type is appended to the filename when listing possible completions.
+set visible-stats On
+# as above but completions are coloured!
+set colored-stats On
+# appends a slash to symlinked dirs on autocompletes
+set mark-symlinked-directories On
+
+# show everything rather than ringing the bell if there are ambiguous completions (i.e. two things named the same)
+set show-all-if-ambiguous
+
+# setting a negative value here means we never get asked to show completions regardless of how many there are...
+set completion-query-items -1
 
 # use alt+left/right arrow keys to jump over words
 "\e[5C": forward-word
@@ -6,16 +25,16 @@
 
 # When pressing up or down arrows,
 # show only history entries that match what was already typed
-"\e[A":history-search-backward
-"\e[B":history-search-forward
-
-# ignore case when autocomplete file/directory name using tab
-set completion-ignore-case on
+"\e[A": history-search-backward
+"\e[B": history-search-forward
 
 # use tab to cycle through autocomplete options and shift tab to cycle back
 # http://brettterpstra.com//2011/09/25/quick-tip-some-inputrc-fun/
 TAB: menu-complete
-"\e[Z": "\e-1\C-i"
+# this works well in bash > 4
+"\e[Z": menu-complete-backward
+# here's a workaround for older bash:
+# "\e[Z": "\e-1\C-i"
 
 # use ctrl+H to list all possible completions
 C-H: possible-completions

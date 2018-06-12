@@ -4,19 +4,71 @@
 # source: https://github.com/sleepingkiwi/wsl-dotfiles
 
 
+# colour references:
+# http://misc.flogisoft.com/bash/tip_colors_and_formatting
+# -
+# basically \e[38;5;COLOURCODEm to set foreground colours in 256 colour supporting places
+
+
+# customising the prompt
+# --------------------------------------------------------------------------------------------------
+
+# defining a function that will print our prompt (allows us to use variables/printf style)
+_ () {
+    printf "\n  \e[94m%s: \e[91m%s \n\e[0m" "$USER" "$PWD"
+}
+
+# set the prompt to be generated using the function above
+PROMPT_COMMAND=_
+
+# setting the PS1 marker before input
+# colour formatting needs to be escaped weirdly in PS1...
+# see: http://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-ps1-prompt
+PS1='\[\033[38;5;166m\]• \[\033[0m\]'
+
+
+
 # run on launch
 # --------------------------------------------------------------------------------------------------
 
 # awww that's sweet
 echo "Hi $USER, welcome back. I've really missed you buddy."
 
+# sync _dev whenever we launch...
+bash ~/.dotfiles/_wsl-dev-sync.sh
+
+# set up an ssh session so our key is saved after initial input
+# ref: https://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent
+eval `ssh-agent -s`
+
+# add our default id_rsa key to our ssh session
+# we will be asked for a password but only for the first time!
+ssh-add
+
+
 
 # aliases
 # --------------------------------------------------------------------------------------------------
 
+# quick access to script that syncs our _dev files
 alias dev-sync='bash ~/.dotfiles/_wsl-dev-sync.sh'
 
-alias rm='echo "you should probably use trash-put instead. if you really want to use rm then use \\rm"'
+# warn against using rm directly
+alias rm='echo -e "\n• \e[38;5;166myou should probably use \e[0mtrash-put \e[38;5;166minstead. if you really want to use rm then use \e[0m\\\rm\n"'
+
+alias c='clear'
+
+# in WSL we can launch windows apps - i.e open the current dir in explorer by typing `o .`
+alias o='explorer.exe'
+
+
+
+# shortcuts for current projects
+# --------------------------------------------------------------------------------------------------
+
+alias cd-blurn='cd mnt/s/_dev/knac/skill-shop--app/blurn'
+alias cd-blurn-api='cd mnt/s/_dev/knac/skill-shop--app/blurn-api'
+
 
 
 # some general configuration and settings
