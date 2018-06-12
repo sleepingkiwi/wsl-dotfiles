@@ -14,7 +14,9 @@ echo "Hi $USER, welcome back. I've really missed you buddy."
 # aliases
 # --------------------------------------------------------------------------------------------------
 
-alias dev-sync='bash ~/_wsl-dev-sync.sh'
+alias dev-sync='bash ~/.dotfiles/_wsl-dev-sync.sh'
+
+alias rm='echo "you should probably use trash-put instead. if you really want to use rm then use \\rm"'
 
 
 # some general configuration and settings
