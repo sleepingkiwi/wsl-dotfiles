@@ -28,19 +28,50 @@ PS1='\[\e[38;5;166m\]• \[\e[0m\]'
 
 
 
-# run on launch
+# set up ssh-agent and add keys if required
 # --------------------------------------------------------------------------------------------------
 
-# sync _dev whenever we launch...
+# https://www.freebsd.org/cgi/man.cgi?query=ssh-add&sektion=1
+# https://stackoverflow.com/questions/40549332/how-to-check-if-ssh-agent-is-already-running-in-bash
+
+# first check whether ssh-agent is running at all
+# the $? arg in the `if` basically equates to the output value of the last command run
+ssh-add -l &>/dev/null
+if [ "$?" == 2 ]; then
+    # 2 means - could not open a connection to your authentication agent.
+
+    # try to load stored agent connection info from file if we can!
+    test -r ~/.ssh-agent && \
+        eval "$(<~/.ssh-agent)" >/dev/null
+
+    # test if that worked
+    ssh-add -l &>/dev/null
+    if [ "$?" == 2 ]; then
+        # we still can't connect so start agent and store agent connection info.
+        # umask creates a file with defined permissions
+        (umask 066; ssh-agent > ~/.ssh-agent)
+        # run the contents of the file we just created
+        eval "$(<~/.ssh-agent)" >/dev/null
+    fi
+fi
+
+# load identities
+ssh-add -l &>/dev/null
+if [ "$?" == 1 ]; then
+    # 1 means that the agent has no identities.
+    # add our standard one/s (loads from ~/.ssh)
+    # keys time out after 5 hours...
+    ssh-add -t 5h
+fi
+
+
+
+# run on every terminal launch
+# --------------------------------------------------------------------------------------------------
+
+# sync _dev whenever we launch a terminal...
+# maybe this is excessive?
 bash ~/.dotfiles/_wsl-dev-sync.sh
-
-# set up an ssh session so our key is saved after initial input
-# ref: https://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent
-eval `ssh-agent -s`
-
-# add our default id_rsa key to our ssh session
-# we will be asked for a password but only for the first time!
-ssh-add
 
 # awww that's sweet
 echo -e "\n\e[38;5;195mHi $USER, welcome back. I've really missed you buddy.\e[0m"
