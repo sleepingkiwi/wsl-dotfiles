@@ -97,6 +97,7 @@ alias o='explorer.exe'
 # shortcuts for current projects
 # --------------------------------------------------------------------------------------------------
 
+# more general purpose shortcuts
 alias cd-blurn='cd /mnt/s/_dev/knac/skill-shop--app/blurn'
 alias cd-blurn-api='cd /mnt/s/_dev/knac/skill-shop--app/blurn-api'
 

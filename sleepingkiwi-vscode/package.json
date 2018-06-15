@@ -1,0 +1,27 @@
+{
+	"name": "sleepingkiwi",
+	"displayName": "Sleepingkiwi",
+	"description": "A VS Code theme for me",
+	"version": "0.0.1",
+	"publisher": "sleepingkiwi",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sleepingkiwi/wsl-dotfiles"
+	},
+	"engines": {
+		"vscode": "^1.17.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "owl-icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "sleepingkiwi",
+				"uiTheme": "vs-dark",
+				"path": "./themes/sleepingkiwi-color-theme.json"
+			}
+		]
+	}
+}
