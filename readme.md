@@ -1,4 +1,6 @@
-# my wip dotfiles for wsl
+# ⚫files for my wsl setup
+
+![screen2](screen2.png)
 
 ## installing linux dotfiles
 
@@ -69,5 +71,28 @@ colour theme and syntax highlighting for vs code using sleepingkiwi base16 colou
 - this will overwrite existing files:
 - `$ cp -rf ~/.dotfiles/sleepingkiwi-vscode/ "/mnt/c/Users/`__joe__`/.vscode/extensions/"`
 - activate the theme from vs code settings
+
+---
+
+## 🎊
+
+fonts and images used in this setup
+
+### fonts
+
+- [Tamsyn bitmap font (7x14)](http://www.fial.com/~scott/tamsyn-font/)
+  - used in conemu
+- [Dank Mono](https://dank.sh)
+  - used in vs code
+  - `"editor.fontFamily": "Dank Mono",`
+  - `"editor.fontLigatures": true,`
+- [Inconsolata](https://fonts.google.com/specimen/Inconsolata)
+- [Hack](http://sourcefoundry.org/hack/)
+
+### backgrounds
+
+- background in screens by [Sara Alfa](https://www.sara-alfa.com/personal-illustrations)
+- background colour e6cf60
+
 
 👻
