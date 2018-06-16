@@ -17,5 +17,5 @@ backup_and_link_file () {
   fi
 }
 
-backup_and_link_file "~/.inputrc" "~/.dotfiles/.inputrc"
-backup_and_link_file "~/.nanorc" "~/.dotfiles/.nanorc"
+backup_and_link_file "$HOME/.inputrc" "$HOME/.dotfiles/.inputrc"
+backup_and_link_file "$HOME/.nanorc" "$HOME/.dotfiles/.nanorc"
