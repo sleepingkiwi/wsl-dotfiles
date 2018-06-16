@@ -2,9 +2,9 @@
   "name": "sleepingkiwi",
   "type": "dark",
   "colors": {
-    "contrastActiveBorder": "#122d42",
-    "contrastBorder": "#122d42",
-    "focusBorder": "#122d42",
+    "contrastActiveBorder": "#00000000",
+    "contrastBorder": "#00000000",
+    "focusBorder": "#00000000",
     "foreground": "#d6deeb",
     "widget.shadow": "#011627",
     "selection.background": "#4373c2",
