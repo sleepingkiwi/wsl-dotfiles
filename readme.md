@@ -43,7 +43,7 @@ settings, theme and colours for conemu terminal emulator
 
 #### installing
 
-- easiest option might be just copying file contents over to the settings file at `/mnt/c/Users/%REPLACEWITHYOURUSERNAME%/AppData/Roaming/ConEmu.xml`
+- easiest option might be just copying file contents over to the settings file at `/mnt/c/Users/`__joe__`/AppData/Roaming/ConEmu.xml`
 - symlinking might be risky because ConEmu expects to be able to write back to this file.
 
 
@@ -55,8 +55,8 @@ layout and skins for rainmeter
 
 - install [rainmeter](https://www.rainmeter.net/)
 - these will overwrite existing files:
-- `$ cp -rf "~/.dotfiles/rainmeter/skins/sleepingkiwi" "/mnt/c/Users/%REPLACEWITHYOURUSERNAME%/Documents/Rainmeter/Skins/sleepingkiwi"`
-- `$ cp -rf "~/.dotfiles/rainmeter/layout/sleepingkiwi" "/mnt/c/Users/%REPLACEWITHYOURUSERNAME%/AppData/Roaming/Rainmeter/Layouts/sleepingkiwi"`
+- `$ cp -rf ~/.dotfiles/rainmeter/skins/sleepingkiwi/ "/mnt/c/Users/`__joe__`/Documents/Rainmeter/Skins/"`
+- `$ cp -rf ~/.dotfiles/rainmeter/layout/sleepingkiwi/ "/mnt/c/Users/`__joe__`/AppData/Roaming/Rainmeter/Layouts/"`
 - activate the layout from rainmeter settings
 
 ### `sleepingkiwi-vscode`
@@ -67,7 +67,7 @@ colour theme and syntax highlighting for vs code using sleepingkiwi base16 colou
 
 - install [vs code](https://code.visualstudio.com/)
 - this will overwrite existing files:
-- `$ cp -rf "~/.dotfiles/sleepingkiwi-vscode" "/mnt/c/Users/%REPLACEWITHYOURUSERNAME%/.vscode/extensions/sleepingkiwi-vscode"`
+- `$ cp -rf ~/.dotfiles/sleepingkiwi-vscode/ "/mnt/c/Users/`__joe__`/.vscode/extensions/"`
 - activate the theme from vs code settings
 
 👻
