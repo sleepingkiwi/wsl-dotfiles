@@ -10,9 +10,12 @@ ln -sf ~/.dotfiles/.bash_sleepingkiwi ~/.bash_sleepingkiwi && echo "👻 symlink
 backup_and_link_file () {
   if [ ! -f $1 ]; then
     echo -e "\n\t$1 doesn't exist."
-    ln -sf "$2" "$1" && echo -e "\n👻 symlinked $1"
+    ln -sf "$2" "$1" && echo -e "\n👻 new symlink for $1"
+  elif [ -h $1 ]; then
+    echo -e "\n\t$1 was already symlinked."
+    ln -sf "$2" "$1" && echo -e "\n👻 replaced symlink for $1"
   else
-    echo -e "\n\t$1 already exists."
+    echo -e "\n\t$1 exists as a file."
     mv "$1" "$1".sleepingkiwi.bak && ln -sf "$2" "$1" && echo -e "\n👻 backed up and symlinked $1"
   fi
 }
