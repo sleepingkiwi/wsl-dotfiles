@@ -1,6 +1,6 @@
 # ⚫files for my wsl setup
 
-![screen2](screen2.png)
+![screen](screen.png)
 
 ## installing linux dotfiles
 
