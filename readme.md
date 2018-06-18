@@ -48,12 +48,11 @@ settings, theme and colours for conemu terminal emulator
 - easiest option might be just copying file contents over to the settings file at `/mnt/c/Users/`__joe__`/AppData/Roaming/ConEmu.xml`
 - symlinking might be risky because ConEmu expects to be able to write back to this file.
 
-
 ### `./rainmeter`
 
 layout and skins for rainmeter
 
-#### installing
+#### installing rainmeter skins
 
 - install [rainmeter](https://www.rainmeter.net/)
 - these will overwrite existing files:
@@ -61,11 +60,11 @@ layout and skins for rainmeter
 - `$ cp -rf ~/.dotfiles/rainmeter/layout/sleepingkiwi/ "/mnt/c/Users/`__joe__`/AppData/Roaming/Rainmeter/Layouts/"`
 - activate the layout from rainmeter settings
 
-### `sleepingkiwi-vscode`
+### `./sleepingkiwi-vscode`
 
 colour theme and syntax highlighting for vs code using sleepingkiwi base16 colours
 
-#### installing
+#### installing vs code theme
 
 - install [vs code](https://code.visualstudio.com/)
 - this will overwrite existing files:
