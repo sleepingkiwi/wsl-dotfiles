@@ -33,7 +33,7 @@ PS1='\[\e[38;5;166m\]• \[\e[0m\]'
 # ref: https://askubuntu.com/questions/466198/how-do-i-change-the-color-for-directories-with-ls-in-the-console
 # ref: https://unix.stackexchange.com/questions/52659/how-can-i-list-ls-colors-in-colour
 
-LS_COLORS=$LS_COLORS:'ow=97;45:' ; export LS_COLORS
+LS_COLORS=$LS_COLORS:'ow=30;45:' ; export LS_COLORS
 
 
 # set up ssh-agent and add keys if required
