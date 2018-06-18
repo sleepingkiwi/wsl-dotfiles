@@ -1,8 +1,8 @@
 {
 	"name": "sleepingkiwi",
 	"displayName": "Sleepingkiwi",
-	"description": "A VS Code theme for me",
-	"version": "0.0.1",
+	"description": "A VS Code theme for sleepingkiwi",
+	"version": "0.0.2",
 	"publisher": "sleepingkiwi",
 	"repository": {
 		"type": "git",

@@ -1,6 +1,6 @@
 # sleepingkiwi theme for VS Code
 
-- built on top of [night owl](https://github.com/sdras/night-owl-vscode-theme)
+- based on [base16 vscode](https://github.com/golf1052/base16-vscode)
 - with reference from [https://css-tricks.com/creating-a-vs-code-theme/](https://css-tricks.com/creating-a-vs-code-theme/)
 
 ## Installation
