@@ -94,5 +94,4 @@ fonts and images used in this setup
 - background in screens by [Sara Alfa](https://www.sara-alfa.com/personal-illustrations)
 - background colour e6cf60
 
-
 👻
