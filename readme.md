@@ -71,6 +71,16 @@ colour theme and syntax highlighting for vs code using sleepingkiwi base16 colou
 - `$ cp -rf ~/.dotfiles/sleepingkiwi-vscode/ "/mnt/c/Users/`__joe__`/.vscode/extensions/"`
 - activate the theme from vs code settings
 
+### `./autohotkey`
+
+autohotkey scripts for global macros or keyboard shortcuts
+
+#### launching autohotkey script on startup
+
+- launch _run_ dialog with `win + r`
+- type: `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`
+- create a shortcut of the script you want to run and put it in this location.
+
 ---
 
 ## 🎊
