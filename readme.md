@@ -100,7 +100,9 @@ fonts and images used in this setup
 
 ### backgrounds
 
-- background in screens by [Sara Alfa](https://www.sara-alfa.com/personal-illustrations)
-- background colour e6cf60
+- older background in screen (hidden) by [Sara Alfa](https://www.sara-alfa.com/personal-illustrations)
+- older background colour e6cf60
+
+- current backgrounds used are slideshow of base16 highlight colours [stored on dropbox](https://www.dropbox.com/sh/p6eydu3809jxqsc/AAAdUTOfHijIF6mEG_yYBIP5a?dl=0)
 
 👻
