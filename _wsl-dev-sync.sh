@@ -19,6 +19,7 @@ declare -a array=(
 "/mnt/s/Dropbox/_knac/_dev-backups/beginning-to-react"
 "/mnt/s/Dropbox/_knac/_dev-backups/blurn"
 "/mnt/s/Dropbox/_knac/_dev-backups/blurn-api"
+"/mnt/s/Dropbox/_knac/_dev-backups/blurn-transactional-emails"
 "/mnt/s/Dropbox/_knac/_dev-backups/skill-shop-admin"
 "/mnt/s/Dropbox/_knac/_dev-backups/skillporium--dev"
 # /mnt/s/_dev/_mampserver (WordPress) repos
