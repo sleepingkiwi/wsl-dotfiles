@@ -123,4 +123,6 @@ export GREP_OPTIONS='--color=auto'
 
 # docker specific -- allows the client on WSL to find the daemon running in Windows.
 # --------------------------------------------------------------------------------------------------
+
+# ref: https://davidburela.wordpress.com/2018/06/27/running-docker-on-wsl-windows-subsystem-for-linux/
 export DOCKER_HOST=tcp://127.0.0.1:2375
