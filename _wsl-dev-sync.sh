@@ -36,6 +36,8 @@ declare -a array=(
 "/s/Dropbox/_tedworth/website-dev/_other-dev-backups/stralbery"
 # /s/_dev/wsl-dotfiles -- dotfiles for WSL config
 "/s/Dropbox/_tedworth/_dotfiles-backups/wsl-dotfiles"
+# /s/_dev/wordpress-docker -- docker-compose setup for starting wordpress sites!
+ "/s/Dropbox/_tedworth/website-dev/_config-and-docker-backups/wordpress-docker"
 )
 
 # declare an int to track errors
