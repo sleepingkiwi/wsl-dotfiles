@@ -106,12 +106,12 @@ alias o='explorer.exe'
 # --------------------------------------------------------------------------------------------------
 
 # jump to dev
-alias cd-dev='cd /mnt/s/_dev'
+alias cd-dev='cd /s/_dev'
 
 # more general purpose shortcuts
-alias cd-blurn='cd /mnt/s/_dev/knac/skill-shop--app/blurn'
-alias cd-blurn-api='cd /mnt/s/_dev/knac/skill-shop--app/blurn-api'
-alias cd-blurn-emails='cd /mnt/s/_dev/knac/skill-shop--app/blurn-transactional-emails'
+alias cd-blurn='cd /s/_dev/knac/skill-shop--app/blurn'
+alias cd-blurn-api='cd /s/_dev/knac/skill-shop--app/blurn-api'
+alias cd-blurn-emails='cd /s/_dev/knac/skill-shop--app/blurn-transactional-emails'
 
 
 # some general configuration and settings

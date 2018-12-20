@@ -654,7 +654,7 @@
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data='set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pm:/mnt'/>
+					<value name="Cmd1" type="string" data='set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pm:/'/>
 				</key>
 				<key name="Task8" modified="2018-06-14 02:28:01" build="180528">
 					<value name="Name" type="string" data="{Bash::Git bash}"/>
@@ -690,9 +690,9 @@
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Count" type="long" data="3"/>
 					<value name="Active" type="long" data="3"/>
-					<value name="Cmd1" type="string" data='-cur_console:p -cur_console:d:C:\Users\joe -cur_console:m:/mnt set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl'/>
-					<value name="Cmd2" type="string" data='-cur_console:nps1T50V -cur_console:d:C:\Users\joe -cur_console:m:/mnt set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl'/>
-					<value name="Cmd3" type="string" data='&gt; -cur_console:nps1T50H -cur_console:d:C:\Users\joe -cur_console:m:/mnt set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl'/>
+					<value name="Cmd1" type="string" data='-cur_console:p -cur_console:d:C:\Users\joe -cur_console:m:/ set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl'/>
+					<value name="Cmd2" type="string" data='-cur_console:nps1T50V -cur_console:d:C:\Users\joe -cur_console:m:/ set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl'/>
+					<value name="Cmd3" type="string" data='&gt; -cur_console:nps1T50H -cur_console:d:C:\Users\joe -cur_console:m:/ set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl'/>
 				</key>
 			</key>
 			<key name="Apps" modified="2018-06-14 02:28:01" build="180528">
@@ -749,4 +749,3 @@
 		</key>
 	</key>
 </key>
-

@@ -2,6 +2,26 @@
 
 ![screen](screen.png)
 
+## ❗ before using these files
+
+_several files in this directory expect WSL to mount drives at the root: `/c` instead of `/mnt/c`._
+
+__It won't work correctly if you are using the default of `/mnt/{drivename}`__
+
+### making WSL mount to `/`
+
+- in WSL bash:
+- `$ sudo nano /etc/wsl.conf`
+- add the following to that file and write it out:
+
+```shell
+[automount]
+root = /
+options = "metadata"`
+```
+
+_the `options = "metadata"` part is not required but is worthwhile! read more [here](https://blogs.msdn.microsoft.com/commandline/2018/01/12/chmod-chown-wsl-improvements/)_
+
 ## installing linux dotfiles
 
 - in WSL bash:

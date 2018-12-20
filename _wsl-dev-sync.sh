@@ -15,27 +15,27 @@
 # http://www.thegeekstuff.com/2010/06/bash-array-tutorial
 # declare an array variable
 declare -a array=(
-# /mnt/s/_dev repos -- Knac
-"/mnt/s/Dropbox/_knac/_dev-backups/beginning-to-react"
-"/mnt/s/Dropbox/_knac/_dev-backups/blurn"
-"/mnt/s/Dropbox/_knac/_dev-backups/blurn-api"
-"/mnt/s/Dropbox/_knac/_dev-backups/blurn-transactional-emails"
-"/mnt/s/Dropbox/_knac/_dev-backups/skill-shop-admin"
-"/mnt/s/Dropbox/_knac/_dev-backups/skillporium--dev"
-# /mnt/s/_dev/_mampserver (WordPress) repos
-"/mnt/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/vital"
-"/mnt/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/becomethedream"
-"/mnt/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/didactic"
-"/mnt/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/feu-et-joie"
-"/mnt/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/foundation"
-"/mnt/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/latratus-libro"
-"/mnt/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/orion-design-database"
-"/mnt/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/rebus"
-"/mnt/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/silent"
-# /mnt/s/_dev/stralbery -- nick and al wedding site
-"/mnt/s/Dropbox/_tedworth/website-dev/_other-dev-backups/stralbery"
-# /mnt/s/_dev/wsl-dotfiles -- dotfiles for WSL config
-"/mnt/s/Dropbox/_tedworth/_dotfiles-backups/wsl-dotfiles"
+# /s/_dev repos -- Knac
+"/s/Dropbox/_knac/_dev-backups/beginning-to-react"
+"/s/Dropbox/_knac/_dev-backups/blurn"
+"/s/Dropbox/_knac/_dev-backups/blurn-api"
+"/s/Dropbox/_knac/_dev-backups/blurn-transactional-emails"
+"/s/Dropbox/_knac/_dev-backups/skill-shop-admin"
+"/s/Dropbox/_knac/_dev-backups/skillporium--dev"
+# /s/_dev/_mampserver (WordPress) repos
+"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/vital"
+"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/becomethedream"
+"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/didactic"
+"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/feu-et-joie"
+"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/foundation"
+"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/latratus-libro"
+"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/orion-design-database"
+"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/rebus"
+"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/silent"
+# /s/_dev/stralbery -- nick and al wedding site
+"/s/Dropbox/_tedworth/website-dev/_other-dev-backups/stralbery"
+# /s/_dev/wsl-dotfiles -- dotfiles for WSL config
+"/s/Dropbox/_tedworth/_dotfiles-backups/wsl-dotfiles"
 )
 
 # declare an int to track errors
