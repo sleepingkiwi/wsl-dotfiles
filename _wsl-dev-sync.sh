@@ -40,6 +40,8 @@ declare -a array=(
 "/s/Dropbox/_tedworth/website-dev/_config-and-docker-backups/wordpress-docker"
 # /s/_dev/wordREST/wp-content/themes/wordREST -- starter theme for using WP as a CMS for an API
 "/s/Dropbox/_tedworth/website-dev/_boilerplate-and-starter-backups/wordREST"
+# /s/_dev/eventtechnologies -- Event Tech projects
+"/s/Dropbox/_tedworth/silent-auctions--event-technologies/_auction-dev-backups/auctionpayment"
 )
 
 # declare an int to track errors
