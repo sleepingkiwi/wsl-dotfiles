@@ -100,6 +100,10 @@ alias c='clear'
 # in WSL we can launch windows apps - i.e open the current dir in explorer by typing `o .`
 alias o='explorer.exe'
 
+# shut down anything that Docker is running at the moment
+# ref: https://gist.github.com/evanscottgray/8571828#gistcomment-2005196
+alias docker-stop='docker stop $(docker ps -a -q)'
+
 
 
 # shortcuts for current projects
