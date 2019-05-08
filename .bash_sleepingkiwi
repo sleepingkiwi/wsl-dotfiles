@@ -122,7 +122,9 @@ alias cd-blurn-emails='cd /s/_dev/knac/skill-shop--app/blurn-transactional-email
 # --------------------------------------------------------------------------------------------------
 
 # Tell grep to highlight matches
-export GREP_OPTIONS='--color=auto'
+# GREP_OPTIONS is deprecated... I can live without colours for now!
+# If you really want colours back try: https://unix.stackexchange.com/a/352614
+# export GREP_OPTIONS='--color=auto'
 
 
 # docker specific -- allows the client on WSL to find the daemon running in Windows.
