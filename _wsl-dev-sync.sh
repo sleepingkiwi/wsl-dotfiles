@@ -19,6 +19,7 @@ declare -a array=(
 "/s/Dropbox/_knac/_dev-backups/beginning-to-react"
 "/s/Dropbox/_knac/_dev-backups/blurn"
 "/s/Dropbox/_knac/_dev-backups/blurn-api"
+"/s/Dropbox/_knac/_dev-backups/blurn-admin"
 "/s/Dropbox/_knac/_dev-backups/blurn-transactional-emails"
 "/s/Dropbox/_knac/_dev-backups/skill-shop-admin"
 "/s/Dropbox/_knac/_dev-backups/skillporium--dev"
