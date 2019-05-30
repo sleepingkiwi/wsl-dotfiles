@@ -43,6 +43,8 @@ declare -a array=(
 "/s/Dropbox/_tedworth/website-dev/_config-and-docker-backups/wordpress-docker"
 # /s/_dev/wordREST/wp-content/themes/wordREST -- starter theme for using WP as a CMS for an API
 "/s/Dropbox/_tedworth/website-dev/_boilerplate-and-starter-backups/wordREST"
+# /s/_dev/sleepingkiwi-vanilla-starter -- starter for vanilla html with pug/babel/webpack/scss
+"/s/Dropbox/_tedworth/website-dev/_boilerplate-and-starter-backups/sleepingkiwi-vanilla-starter"
 # /s/_dev/eventtechnologies -- Event Tech projects
 "/s/Dropbox/_tedworth/silent-auctions--event-technologies/_auction-dev-backups/auctionpayment"
 )
