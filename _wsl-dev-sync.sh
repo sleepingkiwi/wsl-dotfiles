@@ -47,6 +47,7 @@ declare -a array=(
 "/s/Dropbox/_tedworth/website-dev/_boilerplate-and-starter-backups/sleepingkiwi-vanilla-starter"
 # /s/_dev/eventtechnologies -- Event Tech projects
 "/s/Dropbox/_tedworth/silent-auctions--event-technologies/_auction-dev-backups/auctionpayment"
+"/s/Dropbox/_tedworth/website-dev/_event-technologies-backups/miller-coors-registration"
 )
 
 # declare an int to track errors
