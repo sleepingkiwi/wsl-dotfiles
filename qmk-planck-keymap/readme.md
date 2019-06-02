@@ -1,0 +1,3 @@
+# this is a backup
+
+this is a backup of my planck keymap from the forked qmk_firmware repo. Because I don't want to include the whole fork...

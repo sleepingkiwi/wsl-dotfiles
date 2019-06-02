@@ -95,6 +95,10 @@ colour theme and syntax highlighting for vs code using sleepingkiwi base16 colou
 
 load the URL to setup your firefox colour theme in Firefox browsers!
 
+### `./qmk-plank-keymap`
+
+backup of the keymap and config files for my planck layout. Requires qmk firmware to make and flash.
+
 ---
 
 ## 🎊
