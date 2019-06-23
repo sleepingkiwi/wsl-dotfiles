@@ -35,8 +35,10 @@ declare -a array=(
 "/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/silent"
 # /s/_dev/stralbery -- nick and al wedding site
 "/s/Dropbox/_tedworth/website-dev/_other-dev-backups/stralbery"
-# /s/_dev/jonathanbaggaley -- Dad's photography site
+# /s/_dev/jonathanbaggaley -- abandonned first pass kirby/next
 "/s/Dropbox/_tedworth/website-dev/_other-dev-backups/jonathanbaggaley"
+# /s/_dev/jonathanbaggaley-preact -- site updated to use preact and netlify cms
+"/s/Dropbox/_tedworth/website-dev/_other-dev-backups/jonathanbaggaley-preact"
 # /s/_dev/wsl-dotfiles -- dotfiles for WSL config
 "/s/Dropbox/_tedworth/_dotfiles-backups/wsl-dotfiles"
 # /s/_dev/wordpress-docker -- docker-compose setup for starting wordpress sites!
