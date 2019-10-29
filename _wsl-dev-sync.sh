@@ -52,6 +52,7 @@ declare -a array=(
 # /s/_dev/eventtechnologies -- Event Tech projects
 "/s/Dropbox/_tedworth/silent-auctions--event-technologies/_auction-dev-backups/auctionpayment"
 "/s/Dropbox/_tedworth/website-dev/_event-technologies-backups/miller-coors-registration"
+"/s/Dropbox/_tedworth/website-dev/_event-technologies-backups/merck"
 )
 
 # declare an int to track errors
