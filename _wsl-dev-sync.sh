@@ -41,6 +41,8 @@ declare -a array=(
 "/s/Dropbox/_tedworth/website-dev/_other-dev-backups/jonathanbaggaley"
 # /s/_dev/static-preact-with-cms -- starter for static preact sites with netlify cms
 "/s/Dropbox/_tedworth/website-dev/_other-dev-backups/static-preact-with-cms"
+# /s/_dev/sleepingkiwi-eleventy -- starter for static sites using eleventy with netlify cms
+"/s/Dropbox/_tedworth/website-dev/_boilerplate-and-starter-backups/sleepingkiwi-eleventy"
 # /s/_dev/wsl-dotfiles -- dotfiles for WSL config
 "/s/Dropbox/_tedworth/_dotfiles-backups/wsl-dotfiles"
 # /s/_dev/wordpress-docker -- docker-compose setup for starting wordpress sites!
