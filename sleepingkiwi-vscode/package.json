@@ -2,7 +2,7 @@
 	"name": "sleepingkiwi",
 	"displayName": "Sleepingkiwi",
 	"description": "A VS Code theme for sleepingkiwi",
-	"version": "0.0.4",
+	"version": "1.0.1",
 	"publisher": "sleepingkiwi",
 	"repository": {
 		"type": "git",
@@ -14,13 +14,18 @@
 	"categories": [
 		"Themes"
 	],
-	"icon": "owl-icon.png",
+	"icon": "",
 	"contributes": {
 		"themes": [
 			{
 				"label": "sleepingkiwi",
 				"uiTheme": "vs-dark",
 				"path": "./themes/sleepingkiwi-color-theme.json"
+      },
+      {
+				"label": "sleepingkiwi-alt",
+				"uiTheme": "vs-dark",
+				"path": "./themes/sleepingkiwi--alt-color-theme.json"
 			}
 		]
 	}
