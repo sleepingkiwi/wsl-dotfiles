@@ -37,6 +37,8 @@ declare -a array=(
 "/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/silent"
 # /s/_dev/stralbery -- nick and al wedding site
 "/s/Dropbox/_tedworth/website-dev/_other-dev-backups/stralbery"
+# /s/_dev/sylvarna -- sylvarna site
+"/s/Dropbox/_tedworth/website-dev/_other-dev-backups/sylvarna"
 # /s/_dev/jonathanbaggaley -- abandonned first pass kirby/next
 "/s/Dropbox/_tedworth/website-dev/_other-dev-backups/jonathanbaggaley"
 # /s/_dev/static-preact-with-cms -- starter for static preact sites with netlify cms

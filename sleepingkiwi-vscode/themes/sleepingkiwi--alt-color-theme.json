@@ -138,7 +138,7 @@
     "editorOverviewRuler.wordHighlightForeground": "#e2e6ea",
     "editorOverviewRuler.wordHighlightStrongForeground": "#a6cfe2",
     "editorOverviewRuler.modifiedForeground": "#c886a2",
-    "editorOverviewRuler.addedForeground": "#61bfad",
+    "editorOverviewRuler.addedForeground": "#99cc99",
     "editorOverviewRuler.deletedForeground": "#e57066",
     "editorOverviewRuler.errorForeground": "#e57066",
     "editorOverviewRuler.warningForeground": "#ffcc66",
@@ -148,12 +148,12 @@
     "editorError.border": "#e5706600",
     "editorWarning.foreground": "#ffcc66",
     "editorInfo.foreground": "#bedecc",
-    "editorGutter.addedBackground": "#61bfad",
+    "editorGutter.addedBackground": "#99cc99",
     "editorGutter.background": "#35404b",
     "editorGutter.deletedBackground": "#e57066",
     "editorGutter.modifiedBackground": "#c886a2",
 
-    "diffEditor.insertedTextBackground": "#61bfad20",
+    "diffEditor.insertedTextBackground": "#99cc9920",
     "diffEditor.removedTextBackground": "#e5706620",
 
     "editorWidget.background": "#35404b",
@@ -182,10 +182,10 @@
 
     "merge.currentContentBackground": "#a6cfe240",
     "merge.currentHeaderBackground": "#a6cfe240",
-    "merge.incomingContentBackground": "#61bfad60",
-    "merge.incomingHeaderBackground": "#61bfad60",
+    "merge.incomingContentBackground": "#99cc9960",
+    "merge.incomingHeaderBackground": "#99cc9960",
     "editorOverviewRuler.currentContentForeground": "#a6cfe2",
-    "editorOverviewRuler.incomingContentForeground": "#61bfad",
+    "editorOverviewRuler.incomingContentForeground": "#99cc99",
     "editorOverviewRuler.commonContentForeground": "#f3c9dd",
 
     "panel.background": "#35404b",
@@ -228,8 +228,8 @@
     "terminal.ansiBrightRed": "#e57066",
     "terminal.ansiYellow": "#f99d6a",
     "terminal.ansiBrightYellow": "#ffcc66",
-    "terminal.ansiGreen": "#61bfad",
-    "terminal.ansiBrightGreen": "#61bfad",
+    "terminal.ansiGreen": "#99cc99",
+    "terminal.ansiBrightGreen": "#99cc99",
     "terminal.ansiCyan": "#bedecc",
     "terminal.ansiBrightCyan": "#bedecc",
     "terminal.ansiBlue": "#a6cfe2",
@@ -247,7 +247,7 @@
 
     "gitDecoration.modifiedResourceForeground": "#c886a2",
     "gitDecoration.deletedResourceForeground": "#e57066",
-    "gitDecoration.untrackedResourceForeground": "#61bfad",
+    "gitDecoration.untrackedResourceForeground": "#99cc99",
     "gitDecoration.ignoredResourceForeground": "#8493a2",
     "gitDecoration.conflictingResourceForeground": "#ffcc66",
 
@@ -484,7 +484,7 @@
       ],
       "settings": {
         "fontStyle": "",
-        "foreground": "#61bfad"
+        "foreground": "#99cc99"
       }
     },
     {
@@ -633,7 +633,7 @@
         "markup.inserted"
       ],
       "settings": {
-        "foreground": "#61bfad"
+        "foreground": "#99cc99"
       }
     },
     {
