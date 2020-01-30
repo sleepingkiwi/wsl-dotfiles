@@ -25,6 +25,8 @@ declare -a array=(
 "/s/Dropbox/_knac/_dev-backups/skillporium--dev"
 # /s/_dev/kore-database-design
 "/s/Dropbox/_knac/_dev-backups/kore-database-design"
+# /s/_dev/kore-price-calculations
+"/s/Dropbox/_knac/_dev-backups/kore-price-calculations"
 # /s/_dev/_mampserver (WordPress) repos
 "/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/vital"
 "/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/becomethedream"
