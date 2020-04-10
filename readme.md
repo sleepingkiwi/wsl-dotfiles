@@ -59,6 +59,10 @@ customisations to _READLINE_, autocomplete settings mainly.
 
 scheme file for custom [base 16](http://chriskempson.com/projects/base16/) colour scheme.
 
+### `windows-terminal`
+
+settings, theme and colours for windows terminal
+
 ### `ConEmu.xml`
 
 settings, theme and colours for conemu terminal emulator

@@ -24,7 +24,7 @@ PROMPT_COMMAND=_
 # setting the PS1 marker before input
 # colour formatting needs to be escaped weirdly in PS1...
 # see: http://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-ps1-prompt
-PS1='\[\e[38;5;166m\]• \[\e[0m\]'
+PS1='\[\e[38;5;166m\]⚫ \[\e[0m\]'
 
 
 # colours for directories and files in ls...
@@ -82,7 +82,7 @@ fi
 bash ~/.dotfiles/_wsl-dev-sync.sh
 
 # awww that's sweet
-echo -e "\n\e[38;5;195m👻 hi $USER.\e[0m"
+echo -e "\n\e[38;5;195m🎈 hi $USER.\e[0m"
 
 
 
