@@ -73,19 +73,6 @@ if [ "$?" == 1 ]; then
 fi
 
 
-
-# run on every terminal launch
-# --------------------------------------------------------------------------------------------------
-
-# sync _dev whenever we launch a terminal...
-# maybe this is excessive?
-bash ~/.dotfiles/_wsl-dev-sync.sh
-
-# awww that's sweet
-echo -e "\n\e[38;5;195m🎊 hi $USER 🎊\e[0m"
-
-
-
 # aliases
 # --------------------------------------------------------------------------------------------------
 
@@ -133,3 +120,14 @@ alias cd-blurn-emails='cd /s/_dev/knac/skill-shop--app/blurn-transactional-email
 
 # ref: https://davidburela.wordpress.com/2018/06/27/running-docker-on-wsl-windows-subsystem-for-linux/
 # export DOCKER_HOST=tcp://127.0.0.1:2375
+
+
+# run on every terminal launch
+# --------------------------------------------------------------------------------------------------
+
+# sync _dev whenever we launch a terminal...
+# maybe this is excessive?
+bash ~/.dotfiles/_wsl-dev-sync.sh
+
+# awww that's sweet
+echo -e "\n\e[38;5;195m🎊 hi $USER 🎊\e[0m"
