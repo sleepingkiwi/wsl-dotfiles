@@ -82,7 +82,7 @@ fi
 bash ~/.dotfiles/_wsl-dev-sync.sh
 
 # awww that's sweet
-echo -e "\n\e[38;5;195mHi $USER, welcome back. I've really missed you buddy.\e[0m"
+echo -e "\n\e[38;5;195m👻 hi $USER.\e[0m"
 
 
 
@@ -127,8 +127,9 @@ alias cd-blurn-emails='cd /s/_dev/knac/skill-shop--app/blurn-transactional-email
 # export GREP_OPTIONS='--color=auto'
 
 
+# disabled for wsl 2 - https://codesthq.com/painless-way-to-wsl-2-with-docker/
 # docker specific -- allows the client on WSL to find the daemon running in Windows.
 # --------------------------------------------------------------------------------------------------
 
 # ref: https://davidburela.wordpress.com/2018/06/27/running-docker-on-wsl-windows-subsystem-for-linux/
-export DOCKER_HOST=tcp://127.0.0.1:2375
+# export DOCKER_HOST=tcp://127.0.0.1:2375

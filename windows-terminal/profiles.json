@@ -1,0 +1,110 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+// full options at: https://github.com/microsoft/terminal/blob/master/doc/cascadia/SettingsSchema.md
+// docs at: https://github.com/microsoft/terminal/blob/master/doc/user-docs/UsingJsonSettings.md
+
+{
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+
+  "defaultProfile": "{703ba969-8d91-4340-8c7a-9256e26044c1}",
+
+  "alwaysShowTabs": true,
+  "copyOnSelect": false,
+  "copyFormatting": false,
+  "showTabsInTitlebar": true,
+  "showTerminalTitleInTitlebar": true,
+
+  // position nicely with rainmeter stuff on our default monitor.
+  "initialPosition": "265,12",
+  "initialRows": 63,
+  "initialCols": 202,
+
+  "profiles":
+  {
+    "defaults":
+    {
+      // Put settings here that you want to apply to all profiles
+
+    },
+    "list":
+    [
+      {
+        "guid": "{703ba969-8d91-4340-8c7a-9256e26044c1}",
+        "name": "sleepingkiwi",
+        "commandline" : "wsl -d Ubuntu",
+        "startingDirectory" : "//wsl$/Ubuntu/home/sleepingkiwi",
+        "useAcrylic": false,
+        "closeOnExit": "graceful",
+        "colorScheme": "sleepingkiwi",
+        "cursorColor":  "#cad1d8",
+        "cursorShape": "underscore",
+        "fontFace": "Dank Mono",
+        "antialiasingMode": "cleartype",
+        "fontSize": 12,
+        "padding": "12"
+      },
+      {
+        // Make changes here to the powershell.exe profile
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "name": "Windows PowerShell",
+        "commandline": "powershell.exe",
+        "hidden": false
+      },
+      {
+        // Make changes here to the cmd.exe profile
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "name": "cmd",
+        "commandline": "cmd.exe",
+        "hidden": false
+      },
+      {
+        "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+        "hidden": false,
+        "name": "Ubuntu",
+        "source": "Windows.Terminal.Wsl"
+      },
+      {
+        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+        "hidden": false,
+        "name": "Azure Cloud Shell",
+        "source": "Windows.Terminal.Azure"
+      }
+    ]
+  },
+
+  // Add custom color schemes to this array
+  "schemes": [
+    {
+      // uses sleepingkiwi-alt base 16 colours
+      "name": "sleepingkiwi",
+      "foreground": "#cad1d8",
+      "background": "#35404b",
+      // "selectionBackground":  "#d5dce4",
+      // "cursorColor":  "#cad1d8", // defined in profile
+      "black":  "#35404b",
+      "blue": "#a6cfe2",
+      "brightBlack":  "#8493a2",
+      "brightBlue":  "#a6cfe2",
+      "brightCyan":  "#bedecc",
+      "brightGreen":  "#99cc99",
+      "brightPurple": "#c886a2",
+      "brightRed":  "#e57066",
+      "brightWhite":  "#e2e6ea",
+      "brightYellow": "#ffcc66",
+      "cyan":  "#bedecc",
+      "green":  "#99cc99",
+      "purple":  "#c886a2",
+      "red":  "#e57066",
+      "white":  "#cad1d8",
+      "yellow": "#ffcc66"
+    }
+  ],
+
+  // Add any keybinding overrides to this array.
+  // To unbind a default keybinding, set the command to "unbound"
+  "keybindings": [
+    { "command": { "action": "splitPane", "split": "auto"}, "keys": "ctrl+shift+s" }
+  ]
+}
