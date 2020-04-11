@@ -125,6 +125,10 @@ alias cd-blurn-emails='cd /s/_dev/knac/skill-shop--app/blurn-transactional-email
 # run on every terminal launch
 # --------------------------------------------------------------------------------------------------
 
+# start cron tasks to make sure wsl drops cached memory on the regular
+# ref: https://github.com/microsoft/WSL/issues/4166#issuecomment-604707989
+sudo /etc/init.d/cron start
+
 # sync _dev whenever we launch a terminal...
 # maybe this is excessive?
 bash ~/.dotfiles/_wsl-dev-sync.sh
