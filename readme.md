@@ -1,6 +1,6 @@
 # ⚫files for my wsl setup
 
-![screen](screen.png)
+![screen](screen--vertical.png)
 
 ## ❗ before using these files
 
@@ -82,7 +82,10 @@ layout and skins for rainmeter
 - these will overwrite existing files:
 - `$ cp -rf ~/.dotfiles/rainmeter/skins/sleepingkiwi/ "/mnt/c/Users/`__joe__`/Documents/Rainmeter/Skins/"`
 - `$ cp -rf ~/.dotfiles/rainmeter/layout/sleepingkiwi/ "/mnt/c/Users/`__joe__`/AppData/Roaming/Rainmeter/Layouts/"`
-- activate the layout from rainmeter settings
+- `$ cp -rf ~/.dotfiles/rainmeter/layout/sleepingkiwi-vertical/ "/mnt/c/Users/`__joe__`/AppData/Roaming/Rainmeter/Layouts/"`
+- install [Fountain of Colors](https://github.com/alatsombath/Fountain-of-Colors/releases) for live spectrum analysis
+- configure it's settings (C:\Users\joe\Documents\Rainmeter\Skins\Fountain of Colors\@Resources\Variables.inc) using the [rainmeter/fountain-variables.inc](./rainmeter/fountain-variables.inc) file in this repo
+- activate the `sleepingkiwi-vertical` layout from rainmeter settings to put everything on second vertical monitor (as per screenshot)
 
 ### `./sleepingkiwi-vscode`
 
