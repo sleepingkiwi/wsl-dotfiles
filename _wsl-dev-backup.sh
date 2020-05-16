@@ -14,7 +14,8 @@ echo -e "\n\033[0;90m--------------------\033[0m\n\033[0;32m    👻 starting to
 \rm /home/sleepingkiwi/dev.tar.gz
 
 # archive and compress ~/dev
-tar -zcvf /home/sleepingkiwi/dev.tar.gz /home/sleepingkiwi/dev
+# ignore node_modules
+tar -zcvf /home/sleepingkiwi/dev.tar.gz --exclude "node_modules" /home/sleepingkiwi/dev
 
 # archive complete - notify and move
 echo -e "\n\033[0;90m--------------------\033[0m\n\033[0;32m     👻 ~/dev was archived and compressed. Moving to /s/Dropbox/_tedworth/_dev-backups/ubuntu-dev/dev--${TODAY}.tar.gz\n\033[0m\033[0;90m--------------------\033[0m\n"
