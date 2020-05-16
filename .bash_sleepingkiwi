@@ -149,7 +149,7 @@ DAYS_OLD=7
 
 if [ -d "$BACKUPDIR" ] ; then
     FILE="$BACKUPDIR/"$(ls "$BACKUPDIR" -t1  | head -n 1)
-    echo $FILE
+    # echo $FILE
     if [ ! -f "$FILE" ] ; then
       echo -e "\n\033[0;90m💀 can't find any backups.\033[0m"
         echo -e "Do you want to run dev-backup now? \033[0;90m(y/n) \033[0;31m"
