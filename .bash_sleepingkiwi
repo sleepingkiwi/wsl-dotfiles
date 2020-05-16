@@ -140,5 +140,4 @@ sudo /etc/init.d/cron start
 # awww that's sweet
 echo -e "\n\e[38;5;195m🎊 hi $USER 🎊\e[0m"
 
-# awww that's sweet
-echo -e "\n\e[38;5;90mhave you run dev-backup to archive ~/dev lately mate?\e[0m"
+echo -e "\n\033[0;90m👻 have you run dev-backup to archive ~/dev lately?\033[0m"
