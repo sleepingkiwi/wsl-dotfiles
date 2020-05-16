@@ -76,8 +76,12 @@ fi
 # aliases
 # --------------------------------------------------------------------------------------------------
 
-# quick access to script that syncs our _dev files
-alias dev-sync='bash ~/.dotfiles/_wsl-dev-sync.sh'
+# quick access to script that syncs our _dev files - no longer used
+# alias dev-sync='bash ~/.dotfiles/_wsl-dev-sync.sh'
+alias dev-sync='echo -e "\n• \e[38;5;166mI no longer use dev-sync to keep things on Dropbox. If you want to backup ~/dev use \e[0mdev-backup \e[38;5;166minstead.\n"'
+
+# backup dev directory and move it into Dropbox
+alias dev-backup='bash ~/.dotfiles/_wsl-dev-backup.sh'
 
 # warn against using rm directly
 alias rm='echo -e "\n• \e[38;5;166myou should probably use \e[0mtrash-put \e[38;5;166minstead. if you really want to use rm then use \e[0m\\\rm\n"'
@@ -130,8 +134,11 @@ alias cd-blurn-emails='cd /s/_dev/knac/skill-shop--app/blurn-transactional-email
 sudo /etc/init.d/cron start
 
 # sync _dev whenever we launch a terminal...
-# maybe this is excessive?
-bash ~/.dotfiles/_wsl-dev-sync.sh
+# not doing this any more - remember to back up ~/dev though -_-
+# bash ~/.dotfiles/_wsl-dev-sync.sh
 
 # awww that's sweet
 echo -e "\n\e[38;5;195m🎊 hi $USER 🎊\e[0m"
+
+# awww that's sweet
+echo -e "\n\e[38;5;90mhave you run dev-backup to archive ~/dev lately mate?\e[0m"

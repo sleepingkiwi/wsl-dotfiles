@@ -116,17 +116,20 @@ fonts and images used in this setup
 
 - [Tamsyn bitmap font (7x14)](http://www.fial.com/~scott/tamsyn-font/)
   - used in conemu
+- [Young Serif](https://open-foundry.com/fonts/young_serif_regular)
+  - used in rainmeter (the clock/now playing font in the screenshot in this repo)
+- [Ellograph](https://connary.com/ellograph.html)
+  - used in vscode
+  - `"editor.fontFamily": "Ellograph",`
+  - `"editor.fontLigatures": true,`
 - [Dank Mono](https://dank.sh)
-  - used in vs code
+  - also used in vscode
   - `"editor.fontFamily": "Dank Mono",`
   - `"editor.fontLigatures": true,`
 - [Inconsolata](https://fonts.google.com/specimen/Inconsolata)
 - [Hack](http://sourcefoundry.org/hack/)
 
 ### backgrounds
-
-- older background in screen (hidden) by [Sara Alfa](https://www.sara-alfa.com/personal-illustrations)
-- older background colour e6cf60
 
 - current backgrounds used are slideshow of base16 highlight colours [stored on dropbox](https://www.dropbox.com/sh/p6eydu3809jxqsc/AAAdUTOfHijIF6mEG_yYBIP5a?dl=0)
 
