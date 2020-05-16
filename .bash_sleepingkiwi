@@ -140,4 +140,39 @@ sudo /etc/init.d/cron start
 # awww that's sweet
 echo -e "\n\e[38;5;195m🎊 hi $USER 🎊\e[0m"
 
-echo -e "\n\033[0;90m👻 have you run dev-backup to archive ~/dev lately?\033[0m"
+# check on status of backups
+# prompt to do one now if the latest is too old or missing
+# ref: https://unix.stackexchange.com/questions/338944/search-for-newest-file-and-see-if-file-is-older-than-x-date
+
+BACKUPDIR='/s/Dropbox/_tedworth/_dev-backups/ubuntu-dev'
+DAYS_OLD=7
+
+if [ -d "$BACKUPDIR" ] ; then
+    FILE="$BACKUPDIR/"$(ls "$BACKUPDIR" -t1  | head -n 1)
+    echo $FILE
+    if [ ! -f "$FILE" ] ; then
+      echo -e "\n\033[0;90m💀 can't find any backups.\033[0m"
+        echo -e "Do you want to run dev-backup now? \033[0;90m(y/n) \033[0;31m"
+        read -p ": " -n 1 -r
+        echo -e "\033[0m"
+        if [[ $REPLY =~ ^[Yy]$ ]] ; then
+          dev-backup
+        else
+          echo -e "\n\033[0;90m💀 okay. you should do a backup soon though!\033[0m"
+        fi
+    elif test $(find "$FILE" -mtime +$DAYS_OLD) ; then
+        echo -e "\n\033[0;90m💀 your most recent backup is more than ${DAYS_OLD} days old.\033[0m"
+        echo -e "Do you want to run dev-backup now? \033[0;90m(y/n) \033[0;31m"
+        read -p ": " -n 1 -r
+        echo -e "\033[0m"
+        if [[ $REPLY =~ ^[Yy]$ ]] ; then
+          dev-backup
+        else
+          echo -e "\n\033[0;90m💀 okay. you should do a backup soon though!\033[0m"
+        fi
+    else
+        echo -e "\n\033[0;90m👻 your most recent backup is less than ${DAYS_OLD} days old.  You can run dev-backup to archive ~/dev\033[0m"
+    fi
+else
+  echo -e "\n\033[0;90m💀 can't find backup directory at: ${BACKUPDIR}\033[0m"
+fi
