@@ -102,9 +102,19 @@ colour theme and syntax highlighting for vs code using sleepingkiwi base16 colou
 
 load the URL to setup your firefox colour theme in Firefox browsers!
 
-### `./qmk-plank-keymap`
+### `./qmk-keymaps`
 
-backup of the keymap and config files for my planck layout. Requires qmk firmware to make and flash.
+backup of the keymap and config files for my planck and iris layouts. Requires qmk firmware to make and flash.
+
+for the most part you can follow [this guide](https://docs.qmk.fm/#/newbs_getting_started) to get qmk setup
+
+WSL cannot flash over CLI so you will need to use QMK Toolbox from Windows to do the actual flash.
+
+You can copy the `sleepinkiwi` directories from here into a clean qmk setup (i.e. `~/qmk_firmware/keyboards/keebio/iris/keymaps/sleepingkiwi`)
+
+Then you can compile like  qmk compile -kb keebio/iris/rev3 -km sleepingkiwi
+
+But probably just read [the qmk docs](https://docs.qmk.fm/#/newbs_building_firmware) if you need to change them!
 
 ---
 

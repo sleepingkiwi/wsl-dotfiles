@@ -40,5 +40,6 @@
 
 /** setting up tapping timer for tapdanced brackets
  *  ------------------------------------------------------------------------------------------------
+ *  https://docs.qmk.fm/#/feature_tap_dance
 **/
 #define TAPPING_TERM 200
