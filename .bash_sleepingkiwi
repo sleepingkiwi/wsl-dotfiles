@@ -176,3 +176,16 @@ if [ -d "$BACKUPDIR" ] ; then
 else
   echo -e "\n\033[0;90m💀 can't find backup directory at: ${BACKUPDIR}\033[0m"
 fi
+
+# check if we want to go to our home dir if we're not already there
+if [[ $(pwd) != /home/sleepingkiwi ]]
+then
+  echo -e "\n\033[0;93m🐌 you are not in your home dir. would you like to go there? \033[0;90m(y/n) \033[0;31m"
+  read -p ": " -n 1 -r
+  echo -e "\033[0m"
+  if [[ $REPLY =~ ^[Yy]$ ]] ; then
+    cd ~
+  else
+    echo -e "\n\033[0;93m🐌 okay friend. have a lovely day!\033[0m"
+  fi
+fi

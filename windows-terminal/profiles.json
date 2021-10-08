@@ -16,11 +16,6 @@
   "showTabsInTitlebar": true,
   "showTerminalTitleInTitlebar": true,
 
-  // position nicely with rainmeter stuff on our default monitor.
-  "initialPosition": "265,12",
-  "initialRows": 63,
-  "initialCols": 202,
-
   "profiles":
   {
     "defaults":
@@ -34,13 +29,16 @@
         "guid": "{703ba969-8d91-4340-8c7a-9256e26044c1}",
         "name": "sleepingkiwi",
         "commandline" : "wsl -d Ubuntu",
-        "startingDirectory" : "//wsl$/Ubuntu/home/sleepingkiwi",
+          // starting dir currently causes errors intermittently...
+          // https://github.com/microsoft/WSL/issues/6995
+          // added some code to bash file to do this instead
+        // "startingDirectory" : "//wsl$/Ubuntu/home/sleepingkiwi",
         "useAcrylic": false,
         "closeOnExit": "graceful",
         "colorScheme": "sleepingkiwi",
         "cursorColor":  "#cad1d8",
         "cursorShape": "underscore",
-        "fontFace": "Dank Mono",
+        "fontFace": "Ellograph CF",
         "antialiasingMode": "cleartype",
         "fontSize": 12,
         "padding": "12"
