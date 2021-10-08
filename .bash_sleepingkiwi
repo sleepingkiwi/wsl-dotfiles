@@ -140,6 +140,15 @@ sudo /etc/init.d/cron start
 # awww that's sweet
 echo -e "\n\e[38;5;195m🎊 hi $USER 🎊\e[0m"
 
+
+# check if we want to go to our home dir if we're not already there
+if [[ $(pwd) != /home/sleepingkiwi ]]
+then
+  echo -e "\n\033[0;93m🐌 you've been taken to your home directory. \033[0m"
+  echo -e "\033[0;90m(your working directory was previously ${PWD}) \033[0;31m"
+  cd ~
+fi
+
 # check on status of backups
 # prompt to do one now if the latest is too old or missing
 # ref: https://unix.stackexchange.com/questions/338944/search-for-newest-file-and-see-if-file-is-older-than-x-date
@@ -175,12 +184,4 @@ if [ -d "$BACKUPDIR" ] ; then
     fi
 else
   echo -e "\n\033[0;90m💀 can't find backup directory at: ${BACKUPDIR}\033[0m"
-fi
-
-# check if we want to go to our home dir if we're not already there
-if [[ $(pwd) != /home/sleepingkiwi ]]
-then
-  echo -e "\n\033[0;93m🐌 you've been taken to your home directory. \033[0m"
-  echo -e "\033[0;90m(your working directory was previously ${PWD}) \033[0;31m"
-  cd ~
 fi
