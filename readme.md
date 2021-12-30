@@ -91,11 +91,13 @@ layout and skins for rainmeter
 
 colour theme and syntax highlighting for vs code using sleepingkiwi base16 colours
 
+the alt theme is more up to date...
+
 #### installing vs code theme
 
 - install [vs code](https://code.visualstudio.com/)
 - this will overwrite existing files:
-- `$ cp -rf ~/.dotfiles/sleepingkiwi-vscode/ "/mnt/c/Users/`__joe__`/.vscode/extensions/"`
+- `$ cp -rf ~/.dotfiles/sleepingkiwi-vscode/ "/c/Users/`__joe__`/.vscode/extensions/"`
 - activate the theme from vs code settings
 
 ### `./firefox-theme.txt`
