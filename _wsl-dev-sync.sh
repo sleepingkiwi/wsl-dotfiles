@@ -28,37 +28,37 @@ declare -a array=(
 # /s/_dev/kore-price-calculations
 "/s/Dropbox/_knac/_dev-backups/kore-price-calculations"
 # /s/_dev/_mampserver (WordPress) repos
-"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/vital"
-"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/becomethedream"
-"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/didactic"
-"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/feu-et-joie"
-"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/foundation"
-"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/latratus-libro"
-"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/orion-design-database"
-"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/rebus"
-"/s/Dropbox/_tedworth/website-dev/_mampserver-repo-backups/silent"
+"/s/Dropbox/_sleepingkiwi/website-dev/_mampserver-repo-backups/vital"
+"/s/Dropbox/_sleepingkiwi/website-dev/_mampserver-repo-backups/becomethedream"
+"/s/Dropbox/_sleepingkiwi/website-dev/_mampserver-repo-backups/didactic"
+"/s/Dropbox/_sleepingkiwi/website-dev/_mampserver-repo-backups/feu-et-joie"
+"/s/Dropbox/_sleepingkiwi/website-dev/_mampserver-repo-backups/foundation"
+"/s/Dropbox/_sleepingkiwi/website-dev/_mampserver-repo-backups/latratus-libro"
+"/s/Dropbox/_sleepingkiwi/website-dev/_mampserver-repo-backups/orion-design-database"
+"/s/Dropbox/_sleepingkiwi/website-dev/_mampserver-repo-backups/rebus"
+"/s/Dropbox/_sleepingkiwi/website-dev/_mampserver-repo-backups/silent"
 # /s/_dev/stralbery -- nick and al wedding site
-"/s/Dropbox/_tedworth/website-dev/_other-dev-backups/stralbery"
+"/s/Dropbox/_sleepingkiwi/website-dev/_other-dev-backups/stralbery"
 # /s/_dev/sylvarna -- sylvarna site
-"/s/Dropbox/_tedworth/website-dev/_other-dev-backups/sylvarna"
+"/s/Dropbox/_sleepingkiwi/website-dev/_other-dev-backups/sylvarna"
 # /s/_dev/jonathanbaggaley -- abandonned first pass kirby/next
-"/s/Dropbox/_tedworth/website-dev/_other-dev-backups/jonathanbaggaley"
+"/s/Dropbox/_sleepingkiwi/website-dev/_other-dev-backups/jonathanbaggaley"
 # /s/_dev/static-preact-with-cms -- starter for static preact sites with netlify cms
-"/s/Dropbox/_tedworth/website-dev/_other-dev-backups/static-preact-with-cms"
+"/s/Dropbox/_sleepingkiwi/website-dev/_other-dev-backups/static-preact-with-cms"
 # /s/_dev/sleepingkiwi-eleventy -- starter for static sites using eleventy with netlify cms
-"/s/Dropbox/_tedworth/website-dev/_boilerplate-and-starter-backups/sleepingkiwi-eleventy"
+"/s/Dropbox/_sleepingkiwi/website-dev/_boilerplate-and-starter-backups/sleepingkiwi-eleventy"
 # /s/_dev/wsl-dotfiles -- dotfiles for WSL config
-"/s/Dropbox/_tedworth/_dotfiles-backups/wsl-dotfiles"
+"/s/Dropbox/_sleepingkiwi/_dotfiles-backups/wsl-dotfiles"
 # /s/_dev/wordpress-docker -- docker-compose setup for starting wordpress sites!
-"/s/Dropbox/_tedworth/website-dev/_config-and-docker-backups/wordpress-docker"
+"/s/Dropbox/_sleepingkiwi/website-dev/_config-and-docker-backups/wordpress-docker"
 # /s/_dev/wordREST/wp-content/themes/wordREST -- starter theme for using WP as a CMS for an API
-"/s/Dropbox/_tedworth/website-dev/_boilerplate-and-starter-backups/wordREST"
+"/s/Dropbox/_sleepingkiwi/website-dev/_boilerplate-and-starter-backups/wordREST"
 # /s/_dev/sleepingkiwi-vanilla-starter -- starter for vanilla html with pug/babel/webpack/scss
-"/s/Dropbox/_tedworth/website-dev/_boilerplate-and-starter-backups/sleepingkiwi-vanilla-starter"
+"/s/Dropbox/_sleepingkiwi/website-dev/_boilerplate-and-starter-backups/sleepingkiwi-vanilla-starter"
 # /s/_dev/eventtechnologies -- Event Tech projects
-"/s/Dropbox/_tedworth/silent-auctions--event-technologies/_auction-dev-backups/auctionpayment"
-"/s/Dropbox/_tedworth/website-dev/_event-technologies-backups/miller-coors-registration"
-"/s/Dropbox/_tedworth/website-dev/_event-technologies-backups/merck"
+"/s/Dropbox/_sleepingkiwi/silent-auctions--event-technologies/_auction-dev-backups/auctionpayment"
+"/s/Dropbox/_sleepingkiwi/website-dev/_event-technologies-backups/miller-coors-registration"
+"/s/Dropbox/_sleepingkiwi/website-dev/_event-technologies-backups/merck"
 )
 
 # declare an int to track errors

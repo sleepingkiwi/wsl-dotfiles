@@ -153,7 +153,7 @@ fi
 # prompt to do one now if the latest is too old or missing
 # ref: https://unix.stackexchange.com/questions/338944/search-for-newest-file-and-see-if-file-is-older-than-x-date
 
-BACKUPDIR='/s/Dropbox/_tedworth/_dev-backups/ubuntu-dev'
+BACKUPDIR='/s/Dropbox/_sleepingkiwi/_dev-backups/ubuntu-dev'
 DAYS_OLD=7
 
 if [ -d "$BACKUPDIR" ] ; then
