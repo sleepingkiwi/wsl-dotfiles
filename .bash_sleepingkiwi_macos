@@ -1,0 +1,108 @@
+# custom functionality for bash.
+# loaded into .bashrc
+# -
+# source: https://github.com/sleepingkiwi/wsl-dotfiles
+
+
+# colour references:
+# http://misc.flogisoft.com/bash/tip_colors_and_formatting
+# -
+# basically \e[38;5;COLOURCODEm to set foreground colours in 256 colour supporting places
+
+
+# customising the prompt
+# --------------------------------------------------------------------------------------------------
+
+# defining a function that will print our prompt (allows us to use variables/printf style)
+_ () {
+    printf "\n  \e[94m%s: \e[91m%s \n\e[0m" "$USER" "$PWD"
+}
+
+# set the prompt to be generated using the function above
+PROMPT_COMMAND=_
+
+# setting the PS1 marker before input
+# colour formatting needs to be escaped weirdly in PS1...
+# see: http://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-ps1-prompt
+PS1='\[\e[38;5;166m\]🎈 \[\e[0m\]'
+
+
+# colours for directories and files in ls...
+# --------------------------------------------------------------------------------------------------
+
+# ref: https://askubuntu.com/questions/466198/how-do-i-change-the-color-for-directories-with-ls-in-the-console
+# ref: https://unix.stackexchange.com/questions/52659/how-can-i-list-ls-colors-in-colour
+
+LS_COLORS=$LS_COLORS:'ow=30;45:su=97;41:' ; export LS_COLORS
+
+
+# set up ssh-agent and add keys if required
+# --------------------------------------------------------------------------------------------------
+
+# https://www.freebsd.org/cgi/man.cgi?query=ssh-add&sektion=1
+# https://stackoverflow.com/questions/40549332/how-to-check-if-ssh-agent-is-already-running-in-bash
+
+# first check whether ssh-agent is running at all
+# the $? arg in the `if` basically equates to the output value of the last command run
+ssh-add -l &>/dev/null
+if [ "$?" == 2 ]; then
+    # 2 means - could not open a connection to your authentication agent.
+
+    # try to load stored agent connection info from file if we can!
+    test -r ~/.ssh-agent && \
+        eval "$(<~/.ssh-agent)" >/dev/null
+
+    # test if that worked
+    ssh-add -l &>/dev/null
+    if [ "$?" == 2 ]; then
+        # we still can't connect so start agent and store agent connection info.
+        # umask creates a file with defined permissions
+        (umask 066; ssh-agent > ~/.ssh-agent)
+        # run the contents of the file we just created
+        eval "$(<~/.ssh-agent)" >/dev/null
+    fi
+fi
+
+# load identities
+ssh-add -l &>/dev/null
+if [ "$?" == 1 ]; then
+    # 1 means that the agent has no identities.
+    # add our standard one/s (loads from ~/.ssh)
+    # keys time out after 5 hours...
+    ssh-add -t 5h
+fi
+
+
+# aliases
+# --------------------------------------------------------------------------------------------------
+
+# warn against using rm directly
+alias rm='echo -e "\n• \e[38;5;166myou should probably use \e[0mtrash-put \e[38;5;166minstead. if you really want to use rm then use \e[0m\\\rm\n"'
+
+alias c='clear'
+
+# shut down anything that Docker is running at the moment
+# ref: https://gist.github.com/evanscottgray/8571828#gistcomment-2005196
+alias docker-stop='docker stop $(docker ps -a -q)'
+
+
+
+# shortcuts for current projects
+# --------------------------------------------------------------------------------------------------
+
+
+
+# some general configuration and settings
+# --------------------------------------------------------------------------------------------------
+
+# Tell grep to highlight matches
+# GREP_OPTIONS is deprecated... I can live without colours for now!
+# If you really want colours back try: https://unix.stackexchange.com/a/352614
+# export GREP_OPTIONS='--color=auto'
+
+
+# run on every terminal launch
+# --------------------------------------------------------------------------------------------------
+
+# awww that's sweet
+echo -e "\n\e[38;5;195m🎊 hi $USER 🎊\e[0m"
