@@ -15,7 +15,7 @@
 
 # defining a function that will print our prompt (allows us to use variables/printf style)
 _ () {
-    printf "\n  \e[94m%s: \e[91m%s \n\e[0m" "$USER" "$PWD"
+    printf "\n  \e[33m%s: \e[31m%s \n\e[0m" "$USER" "$PWD"
 }
 
 # set the prompt to be generated using the function above
@@ -24,7 +24,7 @@ PROMPT_COMMAND=_
 # setting the PS1 marker before input
 # colour formatting needs to be escaped weirdly in PS1...
 # see: http://unix.stackexchange.com/questions/124407/what-color-codes-can-i-use-in-my-ps1-prompt
-PS1='\[\e[38;5;166m\]🎈 \[\e[0m\]'
+PS1='\[\e[36m\]● \[\e[0m\]'
 
 
 # colours for directories and files in ls...
@@ -77,7 +77,8 @@ fi
 # --------------------------------------------------------------------------------------------------
 
 # warn against using rm directly
-alias rm='echo -e "\n• \e[38;5;166myou should probably use \e[0mtrash-put \e[38;5;166minstead. if you really want to use rm then use \e[0m\\\rm\n"'
+alias rm='echo -e "\n• \e[38;5;166myou should probably use \e[0mtrash-put \e[38;5;166minstead. if you really want to use rm then use 
+\e[0m\\\rm\n"'
 
 alias c='clear'
 
@@ -106,3 +107,4 @@ alias docker-stop='docker stop $(docker ps -a -q)'
 
 # awww that's sweet
 echo -e "\n\e[38;5;195m🎊 hi $USER 🎊\e[0m"
+
