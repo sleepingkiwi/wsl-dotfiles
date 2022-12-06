@@ -81,10 +81,16 @@ alias rm='echo -e "\n• \e[38;5;166myou should probably use \e[0mtrash-put \e[3
 \e[0m\\\rm\n"'
 
 alias c='clear'
+alias o='open'
 
 # shut down anything that Docker is running at the moment
 # ref: https://gist.github.com/evanscottgray/8571828#gistcomment-2005196
 alias docker-stop='docker stop $(docker ps -a -q)'
+
+# colours on ls output mac os
+export CLICOLOR=1
+alias ls='ls -G'
+alias ll='ls -lG'
 
 
 
