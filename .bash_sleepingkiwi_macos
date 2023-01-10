@@ -114,3 +114,8 @@ alias ll='ls -lG'
 # awww that's sweet
 echo -e "\n\e[38;5;195m🎊 hi $USER 🎊\e[0m"
 
+
+# update PATH with anything we need to manually add...
+# --------------------------------------------------------------------------------------------------
+# we've added user specific global composer installs by default
+export PATH="~/.composer/vendor/bin:$PATH"
