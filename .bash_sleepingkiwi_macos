@@ -115,6 +115,12 @@ alias ll='ls -lG'
 echo -e "\n\e[38;5;195m🎊 hi $USER 🎊\e[0m"
 
 
+# use nano as the default editor                      
+# --------------------------------------------------------------------------------------------------
+export EDITOR=nano
+export VISUAL="$EDITOR"
+
+
 # update PATH with anything we need to manually add...
 # --------------------------------------------------------------------------------------------------
 # for example to add user specific global composer installs by default
