@@ -123,5 +123,5 @@ export VISUAL="$EDITOR"
 
 # update PATH with anything we need to manually add...
 # --------------------------------------------------------------------------------------------------
-# for example to add user specific global composer installs by default
-# export PATH="~/.composer/vendor/bin:$PATH"
+# for example to add user specific global composer installs by default - used to run global phpcs
+export PATH="~/.composer/vendor/bin:$PATH"
